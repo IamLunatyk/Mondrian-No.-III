@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+    }
+
+    .grid-container {
+        width: 780px;
+        height: 790px;
+        background-color: black;
+        display: grid;
+        grid-template-columns: 2.5fr 12fr 8.5fr 6fr;
+        grid-template-rows: 7fr 3fr 4fr 0.5fr;
+        grid-column-gap: 8px;
+        grid-row-gap: 12px;
+
+    }
+
+    .grid-container > div {
+        background-color: #E2E1E1;
+    }
+
+    .grid-container > .box-1 {
+        background-color: #BD4D02;
+        grid-column: span 2;
+    }
+
+    .box-2 {
+        grid-column: span 2; 
+    }
+
+    .box-3 {
+        grid-column: span 2; 
+    }
+
+    .box-4 {
+        grid-column: span 2; 
+    }
+
+    .grid-container > .box-5 {
+        grid-row-start: 3;
+        grid-row-end: 6;
+        background-color: #F0E477;
+    }
+
+    .box-6 {
+        grid-row-start: 3;
+        grid-row-end: 6;
+    }
+    .box-8 {
+        grid-row-start: 3;
+        grid-row-end: 6;
+    }
+    .grid-container > .box-7 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-color: #28439C;
+    }
+    .box-9 {
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+        <div class="box-4"></div>
+        <div class="box-5"></div>
+        <div class="box-6"></div>
+        <div class="box-7"></div>
+        <div class="box-8"></div>
+        <div class="box-9"></div>
+    </div>
+</body>
+</html>
